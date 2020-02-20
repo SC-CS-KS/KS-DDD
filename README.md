@@ -1,63 +1,45 @@
-# DDD
+# DDD（领域驱动设计）
 
-## [WhatIs](WhatIs.md)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-## [DDD](DDD/README.md)
+Table of Content
+=================
 
-## [DDD 建模](DDD-Modeling/README.md)
-
-## DDD Framework
-### [DDD 的架构风格](DDD-arch-style.md)
-### 框架实现
-* [Cola](DDD-FW/Cola/README.md)
-
-* [DDDLib](DDD-FW/DDDLib/README.md)
-```md
-一个DDD（领域驱动设计）库，源自Eric Evans的书：“领域驱动设计：解决软件核心中的复杂性“
-```
-* [dddsample-core](https://github.com/citerus/dddsample-core)
-
-* [ddd-leaven-v2](https://github.com/BottegaIT/ddd-leaven-v2)
-```md
-DDD-CqRS示例v2.0项目，可帮助您使用Spring，JPA和测试开始高级域建模。
-```
-## 实践
-* [美团-抽奖-工程实现](DDD-IMP/MT-Project-IMP.md)
-
-## Reference
-* [什么是领域驱动设计？DDD？](https://www.toutiao.com/i6702660118804169229/)
-* [复杂性应对之道 - 领域建模](https://www.edjdhbb.com/2019/02/23/%E5%A4%8D%E6%9D%82%E6%80%A7%E5%BA%94%E5%AF%B9%E4%B9%8B%E9%81%93-%E9%A2%86%E5%9F%9F%E5%BB%BA%E6%A8%A1/)
-
-* [THE STRATEGIC PRACTICES OF DOMAINDRIVEN DESIGN](http://www.ntcoding.co.uk/workshops/strategic-ddd-practices)
-```md
-TABLE OF CONTENTS
-WHAT IS DDD?
-What is Domain-Driven Design? 4
-Business Glossary 6
-DISCOVERING THE MISSION
-Mission Statement 10
-Business Model Canvas 12
-Impact Mapping 17
-User Research and Testing 20
-Other Techniques 22
-Additional Resources 22
-MODELLING CORE DOMAINS
-DDD Flavoured BDD 24
-Domain Use Case Diagrams 27
-Big Picture Event Storming 30
-Core Domains Diagram 32
-Other Techniques 35
-Additional Resources 35
-ALIGNING ORGANISATIONAL AND TECHNICAL BOUNDARIES
-Bounded Contexts and Autonomy Contexts 38
-Context Maps 42
-Value Stream Maps 45
-Other Techniques 48
-Additional Resources 48
-DOMAIN-DRIVEN TECHNICAL STRATEGY
-System Context Diagram 50
-Autonomy Context Diagram 53
-Technical Use Case Diagram 57
-Other Techniques 59
-Additional Resources 59
-```
+   * [<a href="WhatIs.md">WhatIs</a>](#whatis)
+   * [<a href="DDD-Methodology/README.md">DDD 方法论</a>](#ddd-方法论)
+      * [<a href="DDD-Methodology/Domain.md">领域</a>](#领域)
+      * [<a href="DDD-Methodology/BoundedContext.md">界限上下文(Bounded Context)</a>](#界限上下文bounded-context)
+      * [业务语义显性化](#业务语义显性化)
+      * [通用语言](#通用语言)
+      * [<a href="DDD-Methodology/DomainEvent.md">领域事件(Domain Event)</a>](#领域事件domain-event)
+      * [<a href="DDD-Methodology/EventStorming.md">事件风暴(Event Storming)</a>](#事件风暴event-storming)
+      * [<a href="DDD-Methodology/AggregateRoot.md">聚合根(Aggregate Root)</a>](#聚合根aggregate-root)
+      * [<a href="DDD-Methodology/ContextMap.md">上下文映射</a>](#上下文映射)
+      * [<a href="DDD-Methodology/Entity&amp;ValueObject.md">实体&amp;值对象</a>](#实体值对象)
+      * [<a href="DDD-Methodology/DomainEvent.md">领域服务(Domain Service)</a>](#领域服务domain-service)
+      * [<a href="DDD-Methodology/Module.md">模块</a>](#模块)
+      * [模型重构](#模型重构)
+      * [<a href="BDDD-Methodology/izVisualizationAndConfiguration.md">业务可视化和可配置化</a>](#业务可视化和可配置化)
+   * [DDD 架构风格](#ddd-架构风格)
+      * [<a href="DDD-ArchStyle/Layered/README.md">分层设计</a>](#分层设计)
+      * [<a href="DDD-ArchStyle/CQRS/README.md">CQRS</a>](#cqrs)
+      * [<a href="DDD-ArchStyle/EventSourcing/README.md">事件溯源</a>](#事件溯源)
+      * [<a href="DDD-ArchStyle/SixAngle/README.md">六边形架构</a>](#六边形架构)
+      * [RESTful架构](#restful架构)
+      * [事件驱动](#事件驱动)
+   * [DDD模式](#ddd模式)
+      * [<a href="DDD-Pattern/QuestionBasis.md">基于问题空间的DDD模式</a>](#基于问题空间的ddd模式)
+      * [<a href="DDD-Pattern/AnswerBasis.md">基于解空间的DDD模式</a>](#基于解空间的ddd模式)
+   * [<a href="DDD-Modeling/README.md">DDD 建模</a>](#ddd-建模)
+      * [<a href="DDD-Modeling/DomainModel.md">领域模型</a>](#领域模型)
+      * [DDD建模方法](#ddd建模方法)
+         * [<a href="DDD-Modeling/DomainAnalysis/EventStorming-Analysis.md">事件风暴-领域分析</a>](#事件风暴-领域分析)
+      * [<a href="DDD-Modeling/Design.md">DDD 设计过程</a>](#ddd-设计过程)
+      * [<a href="DDD-Modeling/Modeling.md">DDD 建模过程</a>](#ddd-建模过程)
+      * [DDD 建模实践](#ddd-建模实践)
+         * [<a href="DDD-Modeling/Example/Trade.md">交易系统系统建模</a>](#交易系统系统建模)
+   * [DDD 框架](#ddd-框架)
+      * [<a href="DDD-FW/Cola/README.md">Cola</a>](#cola)
+      * [<a href="DDD-FW/DDDLib/README.md">DDDLib</a>](#dddlib)
+   * [DDD 开发](#ddd-开发)
+         * [<a href="DDD-IMP/MT-Project-IMP.md">美团-抽奖-工程实现</a>](#美团-抽奖-工程实现)

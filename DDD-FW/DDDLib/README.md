@@ -1,8 +1,8 @@
 # [DDDLib](https://github.com/dayatang/dddlib)
-
 ```md
-是一个领域驱动设计（Domain Driven Design，简称DDD）类库
+一个DDD（领域驱动设计）库，源自Eric Evans的书：“领域驱动设计：解决软件核心中的复杂性“
 ```
+
 ## 目标
 ```md
 为基于DDD的开发范式提供基本的接口和抽象，实现一致性。

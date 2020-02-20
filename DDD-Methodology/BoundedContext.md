@@ -22,8 +22,9 @@ Eric Evans 用细胞来形容限界上下文，因为细胞之所以能够存在
 ```
 
 ## 划分限界上下文
+
 * 界限上下文识别过程
-![](../_pic/BoundedContext-Recognize.jpg)
+![](_pic/BoundedContext-Recognize.jpg)
 
 * 实践
 ```md
