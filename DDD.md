@@ -4,10 +4,12 @@
 ## [领域](DDD-Methodology/Domain.md)
 ## [界限上下文(Bounded Context)](DDD-Methodology/BoundedContext.md)
 ## 业务语义显性化
-## 通用语言
+## [通用语言(Ubiquitous Language)](DDD-Methodology/UbiquitousLanguage.md)
 ## [领域事件(Domain Event)](DDD-Methodology/DomainEvent.md)
 ## [事件风暴(Event Storming)](DDD-Methodology/EventStorming.md)
 ## [聚合根(Aggregate Root)](DDD-Methodology/AggregateRoot.md)
+## [工厂](DDD-Methodology/Factories.md)
+## [库(Repository)](DDD-Methodology/Repository.md)
 ## [上下文映射](DDD-Methodology/ContextMap.md)
 ## [实体&值对象](DDD-Methodology/Entity&ValueObject.md)
 ## [领域服务(Domain Service)](DDD-Methodology/DomainEvent.md)
@@ -29,7 +31,7 @@
 ## [基于解空间的DDD模式](DDD-Pattern/AnswerBasis.md)
 
 # [DDD 建模](DDD-Modeling/README.md)
-## [领域模型](DDD-Modeling/DomainModel.md)
+## [领域模型](DDD-Modeling/DomainModel/README.md)
 ## DDD建模方法
 ### [事件风暴-领域分析](DDD-Modeling/DomainAnalysis/EventStorming-Analysis.md)
 
