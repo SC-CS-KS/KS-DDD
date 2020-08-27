@@ -42,4 +42,3 @@ PM，运营，RD共聚一堂
 DDD的核心价值在于指导划分界限上下文。
 
 ![](../../_pic/e-commerce-aggregate.jpg)
-
